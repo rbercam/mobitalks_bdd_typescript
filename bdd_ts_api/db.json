@@ -1,0 +1,714 @@
+{
+  "bank": [
+    {
+      "code": "4",
+      "name": "Caixa Economica",
+      "id": 1
+    },
+    {
+      "name": "ABBEY LIFE",
+      "code": "26",
+      "id": 2
+    },
+    {
+      "name": "ABN AMRO HOARE GOVETT CORPORATE FINANCE LTD.",
+      "code": "25",
+      "id": 3
+    },
+    {
+      "name": "ABC INTERNATIONAL BANK PLC",
+      "code": "59",
+      "id": 4
+    },
+    {
+      "name": "ABBEY LIFE",
+      "code": "26",
+      "id": 5
+    },
+    {
+      "name": "UBS CLEARING AND EXECUTION SERVICES LIMITED",
+      "code": "85",
+      "id": 6
+    },
+    {
+      "name": "ABINGWORTH MANAGEMENT LIMITED",
+      "code": "47",
+      "id": 7
+    },
+    {
+      "name": "ABBEY LIFE",
+      "code": "90",
+      "id": 8
+    },
+    {
+      "name": "OTKRITIE SECURITIES LIMITED",
+      "code": "40",
+      "id": 9
+    },
+    {
+      "name": "ALLIED BANK PHILIPPINES (UK) PLC",
+      "code": "63",
+      "id": 10
+    },
+    {
+      "name": "ABN AMRO FUND MANAGERS LIMITED",
+      "code": "15",
+      "id": 11
+    },
+    {
+      "name": "ABU DHABI ISLAMIC BANK",
+      "code": "26",
+      "id": 12
+    },
+    {
+      "name": "ABN AMRO HOARE GOVETT CORPORATE FINANCE LTD.",
+      "code": "09",
+      "id": 13
+    },
+    {
+      "name": "ABBOTSTONE AGRICULTURAL PROPERTY UNIT TRUST",
+      "code": "10",
+      "id": 14
+    },
+    {
+      "name": "ABN AMRO MEZZANINE (UK) LIMITED",
+      "code": "26",
+      "id": 15
+    },
+    {
+      "name": "ABN AMRO FUND MANAGERS LIMITED",
+      "code": "64",
+      "id": 16
+    },
+    {
+      "name": "ABBEY LIFE",
+      "code": "20",
+      "id": 17
+    },
+    {
+      "name": "ABN AMRO CORPORATE FINANCE LIMITED",
+      "code": "33",
+      "id": 18
+    },
+    {
+      "name": "ABBOTSTONE AGRICULTURAL PROPERTY UNIT TRUST",
+      "code": "40",
+      "id": 19
+    },
+    {
+      "name": "ABN AMRO HOARE GOVETT CORPORATE FINANCE LTD.",
+      "code": "82",
+      "id": 20
+    },
+    {
+      "name": "ABN AMRO HOARE GOVETT CORPORATE FINANCE LTD.",
+      "code": "20",
+      "id": 21
+    },
+    {
+      "name": "ABN AMRO HOARE GOVETT LIMITED",
+      "code": "49",
+      "id": 22
+    },
+    {
+      "name": "ABG SUNDAL COLLIER LIMITED",
+      "code": "71",
+      "id": 23
+    },
+    {
+      "name": "UBS CLEARING AND EXECUTION SERVICES LIMITED",
+      "code": "78",
+      "id": 24
+    },
+    {
+      "name": "ABN AMRO HOARE GOVETT CORPORATE FINANCE LTD.",
+      "code": "35",
+      "id": 25
+    },
+    {
+      "name": "ABBOTSTONE AGRICULTURAL PROPERTY UNIT TRUST",
+      "code": "90",
+      "id": 26
+    },
+    {
+      "name": "ABINGWORTH MANAGEMENT LIMITED",
+      "code": "07",
+      "id": 27
+    },
+    {
+      "name": "ALKEN ASSET MANAGEMENT",
+      "code": "06",
+      "id": 28
+    },
+    {
+      "name": "ABC INTERNATIONAL BANK PLC",
+      "code": "45",
+      "id": 29
+    },
+    {
+      "name": "ABN AMRO HOARE GOVETT LIMITED",
+      "code": "99",
+      "id": 30
+    },
+    {
+      "name": "THE ROYAL BANK OF SCOTLAND PLC (FORMER RBS NV)",
+      "code": "36",
+      "id": 31
+    },
+    {
+      "name": "ALKEN ASSET MANAGEMENT",
+      "code": "28",
+      "id": 32
+    },
+    {
+      "name": "ABN AMRO HOARE GOVETT LIMITED",
+      "code": "90",
+      "id": 33
+    },
+    {
+      "name": "ABINGWORTH MANAGEMENT LIMITED",
+      "code": "66",
+      "id": 34
+    },
+    {
+      "name": "ABN AMRO QUOTED INVESTMENTS (UK) LIMITED",
+      "code": "59",
+      "id": 35
+    },
+    {
+      "name": "ABN AMRO HOARE GOVETT LIMITED",
+      "code": "39",
+      "id": 36
+    },
+    {
+      "name": "ABU DHABI ISLAMIC BANK",
+      "code": "87",
+      "id": 37
+    },
+    {
+      "name": "ABN AMRO CORPORATE FINANCE LIMITED",
+      "code": "81",
+      "id": 38
+    },
+    {
+      "name": "THE ROYAL BANK OF SCOTLAND PLC (FORMER RBS NV)",
+      "code": "64",
+      "id": 39
+    },
+    {
+      "name": "ALLIED BANK PHILIPPINES (UK) PLC",
+      "code": "81",
+      "id": 40
+    },
+    {
+      "name": "ALLIED BANK PHILIPPINES (UK) PLC",
+      "code": "96",
+      "id": 41
+    },
+    {
+      "name": "ABN AMRO FUND MANAGERS LIMITED",
+      "code": "53",
+      "id": 42
+    },
+    {
+      "name": "ABN AMRO HOARE GOVETT LIMITED",
+      "code": "79",
+      "id": 43
+    },
+    {
+      "name": "ABN AMRO QUOTED INVESTMENTS (UK) LIMITED",
+      "code": "43",
+      "id": 44
+    },
+    {
+      "name": "ABU DHABI ISLAMIC BANK",
+      "code": "85",
+      "id": 45
+    },
+    {
+      "name": "ALLIED BANK PHILIPPINES (UK) PLC",
+      "code": "29",
+      "id": 46
+    },
+    {
+      "name": "OTKRITIE SECURITIES LIMITED",
+      "code": "05",
+      "id": 47
+    },
+    {
+      "name": "PGMS (GLASGOW) LIMITED",
+      "code": "74",
+      "id": 48
+    },
+    {
+      "name": "SANTANDER UK PLC",
+      "code": "05",
+      "id": 49
+    },
+    {
+      "name": "ALKEN ASSET MANAGEMENT",
+      "code": 753,
+      "id": 50
+    },
+    {
+      "name": "ABN AMRO CORPORATE FINANCE LIMITED",
+      "code": 111,
+      "id": 51
+    },
+    {
+      "name": "ABN AMRO CORPORATE FINANCE LIMITED",
+      "code": 703,
+      "id": 52
+    },
+    {
+      "name": "BANCO BERÇAM",
+      "code": "666",
+      "id": 53
+    },
+    {
+      "name": "BANCO BERÇAM COP",
+      "code": "667",
+      "id": 54
+    },
+    {
+      "name": "BANCO BERÇAM COP",
+      "code": "667",
+      "id": 55
+    },
+    {
+      "name": "BANCO BERÇAM COP",
+      "code": "667",
+      "id": 56
+    },
+    {
+      "name": "BANCO BERÇAM COP",
+      "code": "667",
+      "id": 57
+    },
+    {
+      "name": "BANCO BERÇAM COP",
+      "code": "667",
+      "id": 58
+    },
+    {
+      "name": "BANCO BERÇAM COP",
+      "code": "667",
+      "id": 59
+    },
+    {
+      "name": "BANCO BERÇAM COP",
+      "code": "667",
+      "id": 60
+    },
+    {
+      "name": "BANCO BERÇAM COP",
+      "code": "667",
+      "id": 61
+    },
+    {
+      "name": "BANCO BERÇAM COP",
+      "code": "667",
+      "id": 62
+    },
+    {
+      "name": "BANCO BERÇAM COP",
+      "code": "667",
+      "id": 63
+    },
+    {
+      "name": "BANCO BERÇAM COP",
+      "code": "667",
+      "id": 64
+    },
+    {
+      "name": "BANCO BERÇAM COP",
+      "code": "667",
+      "id": 65
+    },
+    {
+      "name": "Graham, Feeney and Jakubowski",
+      "code": "02096803",
+      "id": 66
+    },
+    {
+      "name": "Jacobs, Stanton and Mraz",
+      "code": "04113370",
+      "id": 67
+    },
+    {
+      "name": "Koss Inc",
+      "code": "87645632",
+      "id": 68
+    },
+    {
+      "name": "Bernier - Gislason",
+      "code": "11595548",
+      "id": 69
+    },
+    {
+      "name": "Willms, Schaefer and Skiles",
+      "code": "82203426",
+      "id": 70
+    },
+    {
+      "name": "Daniel - Adams",
+      "code": "41982187",
+      "id": 71
+    },
+    {
+      "name": "Morar and Sons",
+      "code": "05510025",
+      "id": 72
+    },
+    {
+      "name": "Russel, Rodriguez and Homenick",
+      "code": "57797500",
+      "id": 73
+    },
+    {
+      "name": "Willms - Bauch",
+      "code": "06728092",
+      "id": 74
+    },
+    {
+      "name": "Feeney, Koelpin and Grimes",
+      "code": "28022982",
+      "id": 75
+    },
+    {
+      "name": "Walker, Lang and Johns",
+      "code": "78411086",
+      "id": 76
+    },
+    {
+      "name": "Schamberger Inc",
+      "code": "20721603",
+      "id": 77
+    },
+    {
+      "name": "Bergnaum - Ward",
+      "code": "83204828",
+      "id": 78
+    },
+    {
+      "name": "Thompson, Hartmann and Treutel",
+      "code": "82473720",
+      "id": 79
+    },
+    {
+      "name": "Sipes and Sons",
+      "code": "65407018",
+      "id": 80
+    },
+    {
+      "name": "Wiza - Ziemann",
+      "code": "40918213",
+      "id": 81
+    },
+    {
+      "name": "Gutkowski, Russel and Roob",
+      "code": "10760922",
+      "id": 82
+    },
+    {
+      "name": "Jacobi and Sons",
+      "code": "49573154",
+      "id": 83
+    },
+    {
+      "name": "Bernier - Friesen",
+      "code": "84343711",
+      "id": 84
+    },
+    {
+      "name": "Kertzmann, Schroeder and Mayer",
+      "code": "63380349",
+      "id": 85
+    },
+    {
+      "name": "Stoltenberg LLC",
+      "code": "31537554",
+      "id": 86
+    },
+    {
+      "name": "Jones - Collier",
+      "code": "35516584",
+      "id": 87
+    },
+    {
+      "name": "Wehner, Bergnaum and Tremblay",
+      "code": "18267932",
+      "id": 88
+    },
+    {
+      "name": "Walker Group",
+      "code": "99144958",
+      "id": 89
+    },
+    {
+      "name": "Cormier - Klocko",
+      "code": "14361359",
+      "id": 90
+    },
+    {
+      "name": "Davis, Okuneva and Stokes",
+      "code": "63306739",
+      "id": 91
+    },
+    {
+      "name": "Sporer, Hoppe and Kunze",
+      "code": "75919816",
+      "id": 92
+    },
+    {
+      "name": "Osinski - Dickens",
+      "code": "69888899",
+      "id": 93
+    },
+    {
+      "name": "Kunze - Walter",
+      "code": "03132374",
+      "id": 94
+    },
+    {
+      "name": "Bins Inc",
+      "code": "79396434",
+      "id": 95
+    },
+    {
+      "name": "Ryan - Eichmann",
+      "code": "21989399",
+      "id": 96
+    },
+    {
+      "name": "Hickle - Franecki",
+      "code": "04855998",
+      "id": 97
+    },
+    {
+      "name": "Kling, Heaney and Reinger",
+      "code": "73145132",
+      "id": 98
+    },
+    {
+      "name": "Collier - Towne",
+      "code": "67977896",
+      "id": 99
+    },
+    {
+      "name": "Hermann - Weber",
+      "code": "29603830",
+      "id": 100
+    },
+    {
+      "name": "Kuphal, Emmerich and Graham",
+      "code": "55571531",
+      "id": 101
+    },
+    {
+      "name": "Ryan LLC",
+      "code": "62372912",
+      "id": 102
+    },
+    {
+      "name": "Mills Group",
+      "code": "11646700",
+      "id": 103
+    },
+    {
+      "name": "O'Kon and Sons",
+      "code": "15908042",
+      "id": 104
+    },
+    {
+      "name": "White Group",
+      "code": "84882019",
+      "id": 105
+    },
+    {
+      "name": "Casper LLC",
+      "code": "59541772",
+      "id": 106
+    },
+    {
+      "name": "Ortiz, Mills and Bergnaum",
+      "code": "76799080",
+      "id": 107
+    },
+    {
+      "name": "Beer and Sons",
+      "code": "08429049",
+      "id": 108
+    },
+    {
+      "name": "Treutel, Gibson and Towne",
+      "code": "03712958",
+      "id": 109
+    },
+    {
+      "name": "Gutmann, Langworth and Wolff",
+      "code": "48417047",
+      "id": 110
+    },
+    {
+      "name": "Wolff, Orn and Shields",
+      "code": "47411207",
+      "id": 111
+    },
+    {
+      "name": "Wolff - Veum",
+      "code": "84649505",
+      "id": 112
+    },
+    {
+      "name": "Beatty LLC",
+      "code": "72545690",
+      "id": 113
+    },
+    {
+      "name": "Davis, Kuhn and Blick",
+      "code": "42257846",
+      "id": 114
+    }
+  ],
+  "agency": [
+    {
+      "bankId": 49,
+      "adress": "Cruickshank Junction",
+      "number": "6470",
+      "city": "West Montyberg",
+      "complement": "Apt. 699",
+      "phone": "797343217",
+      "id": 1
+    },
+    {
+      "bankId": 31,
+      "adress": "Stehr Union",
+      "number": "115",
+      "city": "North Pablo",
+      "complement": "Apt. 496",
+      "phone": "493760837",
+      "id": 2
+    },
+    {
+      "bankId": 30,
+      "adress": "Ledner Plains",
+      "number": "6443",
+      "city": "South Shirley",
+      "complement": "Suite 521",
+      "phone": "824359358",
+      "id": 3
+    }
+  ],
+  "customer": [
+    {
+      "agencyId": 1,
+      "name": "Brain Bruen",
+      "occupation": "Forward Manufacturing Supervisor",
+      "adress": "Lesch Locks",
+      "number": "95418",
+      "complement": "Suite 416",
+      "phone": "653936786",
+      "email": "ru@quigley.info",
+      "id": 1
+    },
+    {
+      "agencyId": 2,
+      "name": "Kraig Fay",
+      "occupation": "Community-Services Producer",
+      "adress": "Colene Landing",
+      "number": "10673",
+      "complement": "Apt. 164",
+      "phone": "611563618",
+      "email": "kirk@dibbertmitchell.org",
+      "id": 2
+    },
+    {
+      "agencyId": 2,
+      "name": "Murray Kunde II",
+      "occupation": "Marketing Planner",
+      "adress": "Magen Isle",
+      "number": "975",
+      "complement": "Suite 527",
+      "phone": "205179360",
+      "email": "albert@romaguera.name",
+      "id": 3
+    }
+  ],
+  "account": [
+    {
+      "customerId": 1,
+      "account_number": 5326538329,
+      "iban": "GB84VBMY16738759985568",
+      "card": "6771-8970-8545-3705",
+      "verification_code": "758",
+      "balance": 675.65,
+      "high_limit": 6757,
+      "low_limit": 62,
+      "status": "active",
+      "created": "14/09/2018 08:11",
+      "id": 1
+    },
+    {
+      "customerId": 2,
+      "account_number": 7077932593,
+      "iban": "GB26OYUM95790406029990",
+      "card": "6771-8931-3794-9907",
+      "verification_code": "592",
+      "balance": 120.44,
+      "high_limit": 1201,
+      "low_limit": 4,
+      "status": "active",
+      "created": "14/09/2018 08:13",
+      "id": 2
+    },
+    {
+      "customerId": 3,
+      "account_number": 1196131525,
+      "iban": "GB09CDDQ53458170291390",
+      "card": "5132-6645-6221-9009",
+      "verification_code": "490",
+      "balance": 342.01,
+      "high_limit": 3426,
+      "low_limit": 25,
+      "status": "active",
+      "created": "14/09/2018 08:19",
+      "id": 3
+    }
+  ],
+  "transaction": [
+    {
+      "accountId": 1,
+      "protocol": "B00067PA2U",
+      "status": "confirmed",
+      "transactionId": "44a90aa924484ef1f7eae8fd111f38921d533bea",
+      "type": "credit",
+      "routing_number": "059499390",
+      "value": 44.52,
+      "date": "14/09/2018 08:11",
+      "id": 1
+    },
+    {
+      "accountId": 2,
+      "protocol": "B0000DGTOF",
+      "status": "confirmed",
+      "transactionId": "14b1ee1d350912310d15ca14cf8919b04e51829a",
+      "type": "credit",
+      "routing_number": "258998304",
+      "value": 26.62,
+      "date": "14/09/2018 08:13",
+      "id": 2
+    },
+    {
+      "accountId": 3,
+      "protocol": "B0000DGXE8",
+      "status": "confirmed",
+      "transactionId": "eae9c67fd9ff9067dedf128e1b60e4cc1a1e905a",
+      "type": "credit",
+      "routing_number": "678215227",
+      "value": 79.56,
+      "date": "14/09/2018 08:19",
+      "id": 3
+    }
+  ]
+}

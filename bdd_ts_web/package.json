@@ -1,0 +1,44 @@
+{
+  "name": "bdd_ts",
+  "version": "1.0.0",
+  "description": "Automation tests using Typescript ES6",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf build/",
+    "test": "npm run clean && npm run build && protractor build/config/config.js",
+    "webdriver-update": "webdriver-manager update",
+    "webdriver-start": "webdriver-manager start --seleniumPort 6666",
+    "new-web": "mkdir -p features reports/html reports/json src/config src/pages src/stepdefinitions src/support && npm run touch-web",
+    "touch-web": "touch tsconfig.json src/config/config.ts features/example.feature src/pages/example.page.ts src/stepdefinitions/example.step.ts"
+  },
+  "keywords": [
+    "bdd"
+  ],
+  "author": "Rafael Berçam Medeiros",
+  "license": "ISC",
+  "dependencies": {
+    "@types/chai": "^4.1.5",
+    "@types/typescript": "^2.0.0",
+    "chai": "^4.2.0",
+    "chai-smoothie": "^0.3.2",
+    "cucumber": "^5.0.1",
+    "faker": "^4.1.0",
+    "jsonfile": "^5.0.0",
+    "load-json-file": "^5.1.0",
+    "protractor": "^5.4.1",
+    "protractor-multiple-cucumber-html-reporter-plugin": "^1.8.0",
+    "rimraf": "^2.6.2",
+    "selenium-webdriver": "^4.0.0-alpha.1",
+    "typescript": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/cucumber": "^4.0.4",
+    "@types/faker": "^4.1.4",
+    "@types/jsonfile": "^4.0.1",
+    "@types/load-json-file": "^2.0.7",
+    "@types/protractor": "^4.0.0",
+    "@types/selenium-webdriver": "^3.0.10",
+    "protractor-cucumber-framework": "^6.1.1"
+  }
+}

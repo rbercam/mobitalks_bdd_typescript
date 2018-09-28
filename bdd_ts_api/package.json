@@ -1,0 +1,44 @@
+{
+  "name": "bdd_ts_api",
+  "version": "1.0.0",
+  "description": "Automação de Testes API TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf build/",
+    "test": "npm run clean && npm run build && protractor build/config/config.js",
+    "json-server": "node_modules/.bin/json-server -w db.json",
+    "webdriver-update": "webdriver-manager update",
+    "webdriver-start": "webdriver-manager start --seleniumPort 6666"
+  },
+  "keywords": [
+    "api",
+    "testes",
+    "automação",
+    "typescript",
+    "rbercam"
+  ],
+  "author": "Rafael Berçam Medeiros",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "chai": "^4.2.0",
+    "chai-smoothie": "^0.3.2",
+    "cucumber": "^5.0.1",
+    "faker": "^4.1.0",
+    "json-server": "^0.14.0",
+    "protractor": "^5.4.1",
+    "protractor-cucumber-framework": "^6.1.1",
+    "protractor-multiple-cucumber-html-reporter-plugin": "^1.8.0",
+    "rimraf": "^2.6.2",
+    "typescript": "^3.1.1"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/chai": "^4.1.5",
+    "@types/cucumber": "^4.0.4",
+    "@types/faker": "^4.1.4",
+    "@types/protractor": "^4.0.0",
+    "@types/typescript": "^2.0.0"
+  }
+}
