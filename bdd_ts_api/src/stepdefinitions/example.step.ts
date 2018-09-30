@@ -14,10 +14,22 @@ const bank = new Bank();
 let body: any;
 let statusCode:number;
 let message:string;
+let id: number;
 
   Given('realizar uma requisição do tipo {string}', async (tipo) => {
       if (tipo == 'POST'){
         const res = await bank.postBank();
+        body = res.data;
+        statusCode = res.status;
+        message = res.statusText;
+        id = res.data.id;
+      }else if(tipo == 'GET'){
+        const res = await bank.getBankById(id);
+        body= res.data;
+        statusCode = res.status;
+        message = res.statusText;
+      }else if(tipo == 'PUT'){
+        const res = await bank.putBank(id);
         body = res.data;
         statusCode = res.status;
         message = res.statusText;
@@ -26,10 +38,26 @@ let message:string;
 
   When('a API deverá retornar os dados {string}', async (retorno) => {
         if(retorno == 'do Cadastro'){
-          
-          console.log(`ID: ${body.id}`);  
-          console.log(`Nome: ${body.name}`); 
-          console.log(`Codigo: ${body.code}`); 
+          expect(body).to.have.property('id')
+          expect(body).to.have.property('name')
+          expect(body).to.have.property('code')
+          console.log('\n');  
+          console.log(body);
+          console.log('\n');
+        }else if(retorno == 'da Consulta'){
+          expect(body).to.have.property('id')
+          expect(body).to.have.property('name')
+          expect(body).to.have.property('code')
+          console.log('\n');  
+          console.log(body);
+          console.log('\n');
+        }else if(retorno == 'da Alteração'){
+          expect(body).to.have.property('id')
+          expect(body).to.have.property('name')
+          expect(body).to.have.property('code')
+          console.log('\n');  
+          console.log(body);
+          console.log('\n'); 
         }else{
           console.log('Ainda não implementado');
         }
@@ -39,6 +67,8 @@ let message:string;
   Then('exibir o código {int}', async (codigo) => {
       if(codigo == 201){
         expect(statusCode).to.eq(codigo);
+      }else if(codigo == 200){
+        expect(statusCode).to.eq(codigo);
       }
     
   });
@@ -47,5 +77,7 @@ let message:string;
   Then('a mensagem {string}', async (mensagem) => {
     if(mensagem == 'Created'){
        expect(message).to.eq(mensagem)
+    }else if(mensagem == 'OK'){
+      expect(message).to.eq(mensagem);
     }
   });

@@ -16,7 +16,8 @@ const assert = chai.assert;
 
   When('realizar a pesquisa por {string}', async (string) => {
        await google.campoPesquisa.sendKeys(string);
-       await google.btnPesquisar.click();
+       await google.campoPesquisa.submit();
+       //await google.btnPesquisar.click();
   });
 
   Then('o Google deve exibir o resultado da pesquisa sobre {string}', async (string) => {

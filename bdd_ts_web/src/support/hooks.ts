@@ -5,7 +5,7 @@ import { config } from '../config/config';
 
 BeforeAll({timeout: 4000 * 40000}, async () =>{
     await browser.get(config.baseUrl);
-    await browser.manage().timeouts().implicitlyWait(30000);
+    await browser.manage().timeouts().implicitlyWait(300000);
 })
 
 After(async function (scenario) {

@@ -1,0 +1,284 @@
+[
+  {
+    "keyword": "Funcionalidade",
+    "name": "Manter dados de um Banco",
+    "line": 3,
+    "id": "manter-dados-de-um-banco",
+    "tags": [
+      {
+        "name": "@CadastroBanco",
+        "line": 2
+      }
+    ],
+    "uri": "features/example.feature",
+    "elements": [
+      {
+        "id": "manter-dados-de-um-banco;manter-dados-de-um-novo-banco-\"post\"-request",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Manter dados de um novo Banco \"POST\" Request",
+        "tags": [
+          {
+            "name": "@CadastroBanco",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "build/support/example.hooks.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 6,
+            "name": "realizar uma requisição do tipo \"POST\"",
+            "match": {
+              "location": "build/stepdefinitions/example.step.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 7,
+            "name": "a API deverá retornar os dados \"do Cadastro\"",
+            "match": {
+              "location": "build/stepdefinitions/example.step.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 8,
+            "name": "exibir o código 201",
+            "match": {
+              "location": "build/stepdefinitions/example.step.js:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 9,
+            "name": "a mensagem \"Created\"",
+            "match": {
+              "location": "build/stepdefinitions/example.step.js:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "manter-dados-de-um-banco;manter-dados-de-um-novo-banco-\"get\"-request",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Manter dados de um novo Banco \"GET\" Request",
+        "tags": [
+          {
+            "name": "@CadastroBanco",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "build/support/example.hooks.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 6,
+            "name": "realizar uma requisição do tipo \"GET\"",
+            "match": {
+              "location": "build/stepdefinitions/example.step.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 7,
+            "name": "a API deverá retornar os dados \"da Consulta\"",
+            "match": {
+              "location": "build/stepdefinitions/example.step.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 8,
+            "name": "exibir o código 200",
+            "match": {
+              "location": "build/stepdefinitions/example.step.js:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 9,
+            "name": "a mensagem \"OK\"",
+            "match": {
+              "location": "build/stepdefinitions/example.step.js:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "manter-dados-de-um-banco;manter-dados-de-um-novo-banco-\"put\"-request",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Manter dados de um novo Banco \"PUT\" Request",
+        "tags": [
+          {
+            "name": "@CadastroBanco",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "build/support/example.hooks.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 6,
+            "name": "realizar uma requisição do tipo \"PUT\"",
+            "match": {
+              "location": "build/stepdefinitions/example.step.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 7,
+            "name": "a API deverá retornar os dados \"da Alteração\"",
+            "match": {
+              "location": "build/stepdefinitions/example.step.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 8,
+            "name": "exibir o código 200",
+            "match": {
+              "location": "build/stepdefinitions/example.step.js:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 9,
+            "name": "a mensagem \"OK\"",
+            "match": {
+              "location": "build/stepdefinitions/example.step.js:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

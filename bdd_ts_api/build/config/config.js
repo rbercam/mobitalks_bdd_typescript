@@ -1,5 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+const reporter_1 = require("../support/reporter");
+const jsonReports = process.cwd() + "/reportAPI  ";
 exports.config = {
     framework: 'custom',
     frameworkPath: require.resolve("protractor-cucumber-framework"),
@@ -8,9 +10,12 @@ exports.config = {
     ],
     cucumberOpts: {
         compiler: "ts:ts-node/register",
-        format: "json: ../../reports/jsonCucucmber/cucumber_report.json",
+        format: "json: ../../reportAPI/json/cucumber_report.json",
         require: ["../../build/stepdefinitions/*.js", "../../build/support/*.js"],
         strict: true
+    },
+    onPrepare: () => {
+        reporter_1.Reporter.createDirectory(jsonReports);
     },
     plugins: [{
             package: 'protractor-multiple-cucumber-html-reporter-plugin',
@@ -39,5 +44,6 @@ exports.config = {
             }
         }],
     onComplete: () => {
+        reporter_1.Reporter.createHTMLReport();
     }
 };

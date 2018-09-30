@@ -19,9 +19,23 @@ const bank = new example_page_1.default();
 let body;
 let statusCode;
 let message;
+let id;
 Given('realizar uma requisição do tipo {string}', (tipo) => __awaiter(this, void 0, void 0, function* () {
     if (tipo == 'POST') {
         const res = yield bank.postBank();
+        body = res.data;
+        statusCode = res.status;
+        message = res.statusText;
+        id = res.data.id;
+    }
+    else if (tipo == 'GET') {
+        const res = yield bank.getBankById(id);
+        body = res.data;
+        statusCode = res.status;
+        message = res.statusText;
+    }
+    else if (tipo == 'PUT') {
+        const res = yield bank.putBank(id);
         body = res.data;
         statusCode = res.status;
         message = res.statusText;
@@ -29,9 +43,28 @@ Given('realizar uma requisição do tipo {string}', (tipo) => __awaiter(this, vo
 }));
 When('a API deverá retornar os dados {string}', (retorno) => __awaiter(this, void 0, void 0, function* () {
     if (retorno == 'do Cadastro') {
-        console.log(`ID: ${body.id}`);
-        console.log(`Nome: ${body.name}`);
-        console.log(`Codigo: ${body.code}`);
+        expect(body).to.have.property('id');
+        expect(body).to.have.property('name');
+        expect(body).to.have.property('code');
+        console.log('\n');
+        console.log(body);
+        console.log('\n');
+    }
+    else if (retorno == 'da Consulta') {
+        expect(body).to.have.property('id');
+        expect(body).to.have.property('name');
+        expect(body).to.have.property('code');
+        console.log('\n');
+        console.log(body);
+        console.log('\n');
+    }
+    else if (retorno == 'da Alteração') {
+        expect(body).to.have.property('id');
+        expect(body).to.have.property('name');
+        expect(body).to.have.property('code');
+        console.log('\n');
+        console.log(body);
+        console.log('\n');
     }
     else {
         console.log('Ainda não implementado');
@@ -41,9 +74,15 @@ Then('exibir o código {int}', (codigo) => __awaiter(this, void 0, void 0, funct
     if (codigo == 201) {
         expect(statusCode).to.eq(codigo);
     }
+    else if (codigo == 200) {
+        expect(statusCode).to.eq(codigo);
+    }
 }));
 Then('a mensagem {string}', (mensagem) => __awaiter(this, void 0, void 0, function* () {
     if (mensagem == 'Created') {
+        expect(message).to.eq(mensagem);
+    }
+    else if (mensagem == 'OK') {
         expect(message).to.eq(mensagem);
     }
 }));

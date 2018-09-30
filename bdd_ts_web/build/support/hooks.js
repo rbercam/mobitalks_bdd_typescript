@@ -13,7 +13,7 @@ const protractor_1 = require("protractor");
 const config_1 = require("../config/config");
 BeforeAll({ timeout: 4000 * 40000 }, () => __awaiter(this, void 0, void 0, function* () {
     yield protractor_1.browser.get(config_1.config.baseUrl);
-    yield protractor_1.browser.manage().timeouts().implicitlyWait(30000);
+    yield protractor_1.browser.manage().timeouts().implicitlyWait(300000);
 }));
 After(function (scenario) {
     return __awaiter(this, void 0, void 0, function* () {

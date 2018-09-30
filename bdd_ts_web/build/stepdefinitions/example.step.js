@@ -22,7 +22,8 @@ Given('o endereço do Google', () => __awaiter(this, void 0, void 0, function* (
 }));
 When('realizar a pesquisa por {string}', (string) => __awaiter(this, void 0, void 0, function* () {
     yield google.campoPesquisa.sendKeys(string);
-    yield google.btnPesquisar.click();
+    yield google.campoPesquisa.submit();
+    //await google.btnPesquisar.click();
 }));
 Then('o Google deve exibir o resultado da pesquisa sobre {string}', (string) => __awaiter(this, void 0, void 0, function* () {
     // let texto: string  =  await google.labelTS.getText();

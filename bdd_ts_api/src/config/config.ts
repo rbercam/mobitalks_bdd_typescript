@@ -1,5 +1,6 @@
 import { Config } from 'protractor';
-
+import {Reporter} from '../support/reporter'
+const jsonReports = process.cwd() + "/reportAPI  ";
 
 export const config: Config ={
    
@@ -13,9 +14,12 @@ export const config: Config ={
    
     cucumberOpts: {
         compiler: "ts:ts-node/register",
-        format: "json: ../../reports/jsonCucucmber/cucumber_report.json",
+        format: "json: ../../reportAPI/json/cucumber_report.json",
         require: ["../../build/stepdefinitions/*.js", "../../build/support/*.js"],
         strict: true
+    },
+    onPrepare: () => {
+        Reporter.createDirectory(jsonReports);
     },
 
     plugins: [{
@@ -45,5 +49,6 @@ export const config: Config ={
         }
     }],
     onComplete: () => {
+        Reporter.createHTMLReport();
     }
 }
