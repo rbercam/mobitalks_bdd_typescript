@@ -30,18 +30,33 @@ Given('realizar uma requisição do tipo {string}', (tipo) => __awaiter(this, vo
         statusCode = res.status;
         message = res.statusText;
         id = res.data.id;
+        obj = yield body;
+        jsonfile.writeFile(file, obj, (error) => __awaiter(this, void 0, void 0, function* () {
+            if (error)
+                console.log(error);
+        }));
     }
     else if (tipo == 'GET') {
         const res = yield bank.getBankById(id);
         body = res.data;
         statusCode = res.status;
         message = res.statusText;
+        obj = yield body;
+        jsonfile.writeFile(file, obj, (error) => __awaiter(this, void 0, void 0, function* () {
+            if (error)
+                console.log(error);
+        }));
     }
     else if (tipo == 'PUT') {
         const res = yield bank.putBank(id);
         body = res.data;
         statusCode = res.status;
         message = res.statusText;
+        obj = yield body;
+        jsonfile.writeFile(file, obj, (error) => __awaiter(this, void 0, void 0, function* () {
+            if (error)
+                console.log(error);
+        }));
     }
 }));
 When('a API deverá retornar os dados {string}', (retorno) => __awaiter(this, void 0, void 0, function* () {
@@ -52,11 +67,6 @@ When('a API deverá retornar os dados {string}', (retorno) => __awaiter(this, vo
         console.log('\n');
         console.log(body);
         console.log('\n');
-        obj = body;
-        jsonfile.writeFile(file, obj, function (error) {
-            if (error)
-                console.log(error);
-        });
     }
     else if (retorno == 'da Consulta') {
         expect(body).to.have.property('id');

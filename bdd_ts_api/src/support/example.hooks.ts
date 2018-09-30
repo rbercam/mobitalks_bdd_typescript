@@ -22,11 +22,10 @@ Before('@CadastroBanco', async () =>{
 })
 
 After(async function (scenario) {
-    await jsonfile.readFile(file,function(err, obj){
+    await jsonfile.readFile(file,(err, obj)=>{
         if(err) console.log(err);
         //console.log(obj)
         objeto = obj;
-        
     })
     
     let str:string = await  stringifyObject(objeto,{

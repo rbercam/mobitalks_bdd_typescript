@@ -29,17 +29,35 @@ let id: number;
         statusCode = res.status;
         message = res.statusText;
         id = res.data.id;
+
+        obj = await  body;
+          jsonfile.writeFile(file,obj,async (error)=>{
+            if(error) console.log(error);
+          })
+
+
       }else if(tipo == 'GET'){
         const res = await bank.getBankById(id);
         body= res.data;
         statusCode = res.status;
         message = res.statusText;
+
+        obj = await  body;
+          jsonfile.writeFile(file,obj,async (error)=>{
+            if(error) console.log(error);
+          })
+
       }else if(tipo == 'PUT'){
         const res = await bank.putBank(id);
         body = res.data;
         statusCode = res.status;
         message = res.statusText;
-      }
+
+        obj = await  body;
+        jsonfile.writeFile(file,obj,async (error)=>{
+          if(error) console.log(error);
+        })
+    }
   });
 
   When('a API deverá retornar os dados {string}', async (retorno) => {
@@ -50,10 +68,7 @@ let id: number;
           console.log('\n');
           console.log(body);
           console.log('\n');
-          obj = body;
-          jsonfile.writeFile(file,obj,function(error){
-            if(error) console.log(error);
-          })
+          
         }else if(retorno == 'da Consulta'){
           expect(body).to.have.property('id')
           expect(body).to.have.property('name')

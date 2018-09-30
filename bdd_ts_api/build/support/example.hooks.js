@@ -27,7 +27,7 @@ Before('@CadastroBanco', () => __awaiter(this, void 0, void 0, function* () {
 }));
 After(function (scenario) {
     return __awaiter(this, void 0, void 0, function* () {
-        yield jsonfile.readFile(file, function (err, obj) {
+        yield jsonfile.readFile(file, (err, obj) => {
             if (err)
                 console.log(err);
             //console.log(obj)
