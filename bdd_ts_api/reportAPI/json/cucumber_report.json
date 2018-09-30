@@ -29,11 +29,11 @@
             "keyword": "Before",
             "hidden": true,
             "match": {
-              "location": "build/support/example.hooks.js:14"
+              "location": "build/support/example.hooks.js:18"
             },
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 15000000
             }
           },
           {
@@ -42,11 +42,11 @@
             "line": 6,
             "name": "realizar uma requisição do tipo \"POST\"",
             "match": {
-              "location": "build/stepdefinitions/example.step.js:23"
+              "location": "build/stepdefinitions/example.step.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 22000000
+              "duration": 46000000
             }
           },
           {
@@ -55,11 +55,11 @@
             "line": 7,
             "name": "a API deverá retornar os dados \"do Cadastro\"",
             "match": {
-              "location": "build/stepdefinitions/example.step.js:44"
+              "location": "build/stepdefinitions/example.step.js:47"
             },
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 12000000
             }
           },
           {
@@ -68,11 +68,11 @@
             "line": 8,
             "name": "exibir o código 201",
             "match": {
-              "location": "build/stepdefinitions/example.step.js:73"
+              "location": "build/stepdefinitions/example.step.js:81"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 3000000
             }
           },
           {
@@ -81,12 +81,29 @@
             "line": 9,
             "name": "a mensagem \"Created\"",
             "match": {
-              "location": "build/stepdefinitions/example.step.js:81"
+              "location": "build/stepdefinitions/example.step.js:89"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 2000000
             }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "build/support/example.hooks.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            },
+            "embeddings": [
+              {
+                "data": "undefined",
+                "mime_type": "text/plain"
+              }
+            ]
           },
           {
             "keyword": "After",
@@ -118,7 +135,7 @@
             "keyword": "Before",
             "hidden": true,
             "match": {
-              "location": "build/support/example.hooks.js:14"
+              "location": "build/support/example.hooks.js:18"
             },
             "result": {
               "status": "passed",
@@ -131,11 +148,11 @@
             "line": 6,
             "name": "realizar uma requisição do tipo \"GET\"",
             "match": {
-              "location": "build/stepdefinitions/example.step.js:23"
+              "location": "build/stepdefinitions/example.step.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 11000000
             }
           },
           {
@@ -144,7 +161,20 @@
             "line": 7,
             "name": "a API deverá retornar os dados \"da Consulta\"",
             "match": {
-              "location": "build/stepdefinitions/example.step.js:44"
+              "location": "build/stepdefinitions/example.step.js:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 8,
+            "name": "exibir o código 200",
+            "match": {
+              "location": "build/stepdefinitions/example.step.js:81"
             },
             "result": {
               "status": "passed",
@@ -154,28 +184,32 @@
           {
             "arguments": [],
             "keyword": "E ",
-            "line": 8,
-            "name": "exibir o código 200",
-            "match": {
-              "location": "build/stepdefinitions/example.step.js:73"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
             "line": 9,
             "name": "a mensagem \"OK\"",
             "match": {
-              "location": "build/stepdefinitions/example.step.js:81"
+              "location": "build/stepdefinitions/example.step.js:89"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 2000000
             }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "build/support/example.hooks.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            },
+            "embeddings": [
+              {
+                "data": "{\n  name: \"Christiansen Group\",\n  code: \"12242437\",\n  id: 182\n}",
+                "mime_type": "text/plain"
+              }
+            ]
           },
           {
             "keyword": "After",
@@ -207,7 +241,7 @@
             "keyword": "Before",
             "hidden": true,
             "match": {
-              "location": "build/support/example.hooks.js:14"
+              "location": "build/support/example.hooks.js:18"
             },
             "result": {
               "status": "passed",
@@ -220,11 +254,11 @@
             "line": 6,
             "name": "realizar uma requisição do tipo \"PUT\"",
             "match": {
-              "location": "build/stepdefinitions/example.step.js:23"
+              "location": "build/stepdefinitions/example.step.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 12000000
             }
           },
           {
@@ -233,7 +267,7 @@
             "line": 7,
             "name": "a API deverá retornar os dados \"da Alteração\"",
             "match": {
-              "location": "build/stepdefinitions/example.step.js:44"
+              "location": "build/stepdefinitions/example.step.js:47"
             },
             "result": {
               "status": "passed",
@@ -246,7 +280,7 @@
             "line": 8,
             "name": "exibir o código 200",
             "match": {
-              "location": "build/stepdefinitions/example.step.js:73"
+              "location": "build/stepdefinitions/example.step.js:81"
             },
             "result": {
               "status": "passed",
@@ -259,7 +293,7 @@
             "line": 9,
             "name": "a mensagem \"OK\"",
             "match": {
-              "location": "build/stepdefinitions/example.step.js:81"
+              "location": "build/stepdefinitions/example.step.js:89"
             },
             "result": {
               "status": "passed",
@@ -270,11 +304,26 @@
             "keyword": "After",
             "hidden": true,
             "match": {
+              "location": "build/support/example.hooks.js:28"
+            },
+            "result": {
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "data": "{\n  name: \"Christiansen Group\",\n  code: \"12242437\",\n  id: 182\n}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
               "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:26"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           }
         ]

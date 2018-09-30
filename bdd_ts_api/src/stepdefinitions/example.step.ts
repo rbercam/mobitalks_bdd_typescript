@@ -2,6 +2,12 @@
 import chai = require('chai');
 import Bank from '../services/example.page'
 import { TestObject } from 'protractor/built/driverProviders';
+import { write } from 'fs';
+
+const jsonfile = require('jsonfile');
+const file = `${process.cwd()}/tempJSON/data.json`;
+let obj: any;
+
 
 chai.use(require('chai-smoothie'))
 const {Given, When, Then} = require("cucumber");
@@ -41,9 +47,13 @@ let id: number;
           expect(body).to.have.property('id')
           expect(body).to.have.property('name')
           expect(body).to.have.property('code')
-          console.log('\n');  
+          console.log('\n');
           console.log(body);
           console.log('\n');
+          obj = body;
+          jsonfile.writeFile(file,obj,function(error){
+            if(error) console.log(error);
+          })
         }else if(retorno == 'da Consulta'){
           expect(body).to.have.property('id')
           expect(body).to.have.property('name')

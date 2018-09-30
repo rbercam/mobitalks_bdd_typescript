@@ -10,6 +10,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const chai = require("chai");
 const example_page_1 = require("../services/example.page");
+const jsonfile = require('jsonfile');
+const file = `${process.cwd()}/tempJSON/data.json`;
+let obj;
 chai.use(require('chai-smoothie'));
 const { Given, When, Then } = require("cucumber");
 const expect = chai.expect;
@@ -49,6 +52,11 @@ When('a API deverá retornar os dados {string}', (retorno) => __awaiter(this, vo
         console.log('\n');
         console.log(body);
         console.log('\n');
+        obj = body;
+        jsonfile.writeFile(file, obj, function (error) {
+            if (error)
+                console.log(error);
+        });
     }
     else if (retorno == 'da Consulta') {
         expect(body).to.have.property('id');
